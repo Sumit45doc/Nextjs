@@ -1,8 +1,11 @@
 import Link from "next/link"
 import Head from "next/head"
+import Layout from "../../components/Layout"
+import Post from "../../secondaryComponent/Post"
+
 function firstpost() {
     return (
-        <>
+        <Layout>
             <Head>
                 <title>First post</title>
             </Head>
@@ -14,8 +17,9 @@ function firstpost() {
                    <a>Back to home</a>
                 </Link>
             </h2>
-            <style jsx>{`.first{color: blue}`}</style>
-        </>
+            <Post/>
+            {/* <style jsx>{`.first{color: blue}`}</style> */}
+        </Layout>
     )
 }
 
